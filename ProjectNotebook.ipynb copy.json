@@ -1,0 +1,219 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Project Description"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "My final project is a Mad Lib, which is a word game in which the player fills in the blanks of sentences by chosing words. In order to create a wacky story, players are only given the word type, such as noun or verbs, with no other context about the sentence. After chosing their words, the story is then read out loud with their word choices completing the sentences.\n",
+    "\n",
+    "To create this game in code, I started by having the player chose their words. I used variables and named them after the type of word that was required. Because there are multiple words of the same type used through out the mad lib, I also included numbers in the variable names. Each variable was assigned to a blank string. The idea is that the player can fill in the string with their word choice and the variable would then be assigned to that word. Players know what type of word to chose by the instructions above each set of variables. \n",
+    "\n",
+    "Once their words were chosen, I created functions that represented each blank in the mad lib. The function was named blank along with the chronological number of the blanks, starting with 1. Each function held one of the variables from before as their parameter. The output of the function was then assigned to strings and to their respective variables. The strings contained the parts of the sentence before or after the variables/blanks of the mad lib. The function then returned the output so that it created parts of a sentence including the player's word choice. \n",
+    "\n",
+    "Once each function was defined, I created variables which held their outputs. The variables were named lib#. The number corresponded to the number of the function whose output it held. \n",
+    "\n",
+    "In order to write the story as a whole, I created one final variable, named xmas_mad_lib. This variable was assigned to add all the lib variables together, in order starting from 1. I then coded xmas_mad_lib to print, which wrote the story as complete sentences with the player's word choices."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Citations "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "- used Mad Lib template from: https://images.app.goo.gl/TxvWbZWDEmUDoc746"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Project Code"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill each quote below with an adjective of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "adjective1 = ''\n",
+    "adj2 = ''\n",
+    "adj3 = ''\n",
+    "adj4 = ''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill each quote below with a color of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "color = ''\n",
+    "color2 = ''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill the quote below with a body part of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "body_part = ''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill the quote below with a noun of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "noun = ''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill the quote below with a number of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "number = ''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill the quote below with animals of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "animals = ''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill the quote below with a verb of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "verb = ''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Fill each quote below with plural nouns of your choice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "plural_noun = ''\n",
+    "p_n2 = ''\n",
+    "p_n3 = ''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Santa Clause is a  man who wears a   suit with a  belt and a   beard and his  shakes like jelly when he laughs. Every Christmas, he rides a  full of presents, pulled by   high into the night sky. Santa  down the chimney of homes to leave , , and  under Christmas trees.\n"
+     ]
+    }
+   ],
+   "source": [
+    "from my_module.functions import *"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
